@@ -56,7 +56,6 @@ body{
 
 /* end global rules */
 body{
-    background-image: linear-gradient(to right, rgb(34, 2, 2)40%,rgb(2, 2, 32));
     color: rgb(202, 200, 200);
 }
 .title{
