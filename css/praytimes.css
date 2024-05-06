@@ -1,0 +1,146 @@
+/* start variables */
+:root{
+
+}
+/* end variables */
+/* start global rules */
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+list-style: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "El Messiri", sans-serif;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .container{
+        width: 1200px;
+    }
+}
+@media (min-width: 1300px){
+    .container{
+        width: 1350px;
+    }
+}
+
+/* end global rules */
+body{
+    background-image: linear-gradient(to right, rgb(34, 2, 2)40%,rgb(2, 2, 32));
+    color: rgb(202, 200, 200);
+}
+.title{
+    text-align: center;
+    margin-top: 40px; 
+    margin-bottom: 80px;  
+}
+.location-selection{
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+.prey-times{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 15px;
+}
+.prey{
+    text-align: center;
+    font-size: 20px;
+    background-color: rgba(62, 3, 85, 0.144);
+    border-radius: 20px;
+}
+.prey h2{
+    background-color: rgba(255, 0, 0, 0.13);
+    border-radius: 20px;
+    color: rgb(207, 221, 5);
+}
+.prey p{
+    font-size: 25px;
+}
+.prey p ,.prey h2{
+    margin: 20px 0;
+}
+
+#country, #city{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(5, 3, 26);
+    color: rgb(209, 206, 206);
+    font-family: "El Messiri", sans-serif;
+    border-color: rgb(170, 170, 170);
+    border-radius: 10px;
+    padding: 5px;
+}
+.country label, .city label{
+    font-size: 25px;
+    margin-left: 10px;
+    color: rgb(199, 196, 196);
+}
+#daytime{
+    margin-top: 140px;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+@media (max-width: 635px){
+    .title{
+        margin-bottom: 20px;  
+        font-size: 28px;
+    }
+    .country label, .city label{
+        font-size: 18px;
+    }
+    .prey-times{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        grid-gap: 15px;
+    }
+    #country, #city{
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        background-color: rgb(5, 3, 26);
+        color: rgb(209, 206, 206);
+        font-family: "El Messiri", sans-serif;
+        border-color: rgb(170, 170, 170);
+        border-radius: 10px;
+        padding: 5px;
+    }
+    #daytime{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+}
+

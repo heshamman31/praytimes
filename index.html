@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praytimes</title>
+    <!-- main css file-->
+    <link rel="stylesheet" href="css/praytimes.css">
+    <!-- font Aowesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+        <!-- google font -->
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=El+Messiri:wght@400..700&family=Open+Sans:wght@300;400;500;600;700;800&family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">مواقيت الصلوات</h1>
+        <div class="location-selection">
+            <div class="country">
+                <label for="country">اختر الدولة</label>
+                <select onchange= reviewCities(this.value)  name="country" id="country">
+                    
+                </select>
+            </div>
+            <div class="city">
+                <label for="city">اختر المدينة</label>
+                <select onchange= getTimes(this.value) name="city" id="city">
+
+                </select>
+            </div>
+        </div>
+        <h3 id="daytime"></h3>
+        <div class="prey-times">
+            <div class="prey">
+                <h2>الفجر</h2>
+                <p id="Fajr">4:30 AM</p>
+            </div>
+            <div class="prey">
+                <h2>الشروق</h2>
+                <p id="Sunrise">4:30 AM</p>
+            </div>
+            <div class="prey">
+                <h2>الضهر</h2>
+                <p id="Dhuhr">4:30 AM</p>
+            </div>
+            <div class="prey">
+                <h2>العصر</h2>
+                <p id="Asr">4:30 AM</p>
+            </div>
+            <div class="prey">
+                <h2>المغرب</h2>
+                <p id="Maghrib">4:30 AM</p>
+            </div>
+            <div class="prey">
+                <h2>العشاء</h2>
+                <p id="Isha">4:30 AM</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
