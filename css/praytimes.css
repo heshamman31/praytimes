@@ -57,6 +57,7 @@ body{
 /* end global rules */
 body{
     color: rgb(202, 200, 200);
+    background-image: linear-gradient(to right, rgb(34, 2, 2)40%,rgb(2, 2, 32));
 }
 .title{
     text-align: center;
