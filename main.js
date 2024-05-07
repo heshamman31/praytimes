@@ -457,7 +457,7 @@ let Isha = document.getElementById("Isha");
 let dayTime = document.getElementById("daytime");
 
 function getTimes(cityValue){
-  axios.get(`http://api.aladhan.com/v1/timingsByCity/:date?country=${nowCountry}&city=${cityValue}`)
+  axios.get(`https://api.aladhan.com/v1/timingsByCity/:date?country=${nowCountry}&city=${cityValue}`)
   .then(function (response) {
     Fajr.innerHTML = response.data.data.timings.Fajr;
     Sunrise.innerHTML = response.data.data.timings.Sunrise;
